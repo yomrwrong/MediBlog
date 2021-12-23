@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_verify_your_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="38dp"
+        android:text="Verify your \nPhone Number"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_verify_your_number"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:itemCount="4"
+        app:itemHeight="40dp"
+        app:itemWidth="40dp"
+        app:itemRadius="6dp"
+        app:itemSpacing="4dp"
+        app:lineColor="#7A7A7A"
+        app:lineWidth="1dp"
+        app:viewType="rectangle" />
+
+    <TextView
+        android:id="@+id/text_view_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinView"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="38dp"
+        android:text="Enter Valid OTP"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_view_verify_your_number_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_error"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="38dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:id="@+id/text_view_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_verify_your_number_desc"
+        android:background="@drawable/btn_login"
+        android:elevation="2dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:padding="10dp"
+        android:text="CONTINUE"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
